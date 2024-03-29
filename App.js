@@ -14,20 +14,6 @@ export default function App() {
         renderItem={({ item }) => <Card item={item}></Card>}
         keyExtractor={(item) => item.id}
       />
-      {/* <FlatList
-        style={{ margin: 5 }}
-        data={data}
-        numColumns={2}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item, index }) => {
-          const lastItem = index === data.length - 1;
-          return (
-            <View style={{ flex: lastItem ? 1 / 2 : 1 }}>
-              <Card item={item}></Card>
-            </View>
-          );
-        }}
-      /> */}
     </SafeAreaView>
   );
 }
